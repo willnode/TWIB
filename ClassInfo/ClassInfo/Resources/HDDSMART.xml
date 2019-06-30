@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<SMARTAttributes>
+ <attr id="01" Ctgr="1" Name="RAW Read Error Rate"/>
+  <attr id="02" Ctgr="0" Name="Throughput performance"/>
+  <attr id="03" Ctgr="1" Name="Spinup time"/>
+  <attr id="04" Ctgr="2" Name="Start/Stop count"/>
+  <attr id="05" Ctgr="1" Name="Reallocated sector count"/>
+  <attr id="06" Ctgr="2" Name="Read channel margin"/>
+  <attr id="07" Ctgr="2" Name="Seek error rate"/>
+  <attr id="08" Ctgr="0" Name="Seek timer performance"/>
+  <attr id="09" Ctgr="2" Name="Power-on hours count"/>
+  <attr id="0A" Ctgr="1" Name="Spinup retry count"/>
+  <attr id="0B" Ctgr="1" Name="Calibration retry count"/>
+  <attr id="0C" Ctgr="2" Name="Power cycle count"/>
+  <attr id="0D" Ctgr="1" Name="Soft read error rate"/>
+  <attr id="AA" Ctgr="2" Name="Available Reserved Space"/>
+  <attr id="AB" Ctgr="2" Name="SSD Program Fail Count"/>
+  <attr id="AC" Ctgr="2" Name="SSD Erase Fail Count"/>
+  <attr id="AE" Ctgr="2" Name="Unexpected Power Loss Count"/>
+  <attr id="AF" Ctgr="2" Name="Power Loss Protection Failure"/>
+  <attr id="B1" Ctgr="2" Name="Wear Range Delta"/>
+  <attr id="B3" Ctgr="2" Name="Used Reserved Block Count Total"/>
+  <attr id="B4" Ctgr="2" Name="Unused Reserved Block Count Total"/>
+  <attr id="B5" Ctgr="1" Name="Program Fail Count Total"/>
+  <attr id="B6" Ctgr="2" Name="Erase Fail Count"/>
+  <attr id="B7" Ctgr="2" Name="SATA Downshift Error Count"/>
+  <attr id="B8" Ctgr="1" Name="End-to-End error"/>
+  <attr id="B9" Ctgr="2" Name="Head Stability"/>
+  <attr id="BA" Ctgr="2" Name="Induced Op-Vibration Detection"/>
+  <attr id="BB" Ctgr="1" Name="Reported Uncorrectable Errors"/>
+  <attr id="BC" Ctgr="1" Name="Command Timeout"/>
+  <attr id="BD" Ctgr="1" Name="High Fly Writes"/>
+  <attr id="BE" Ctgr="1" Name="Airflow Temperature"/>
+  <attr id="BF" Ctgr="1" Name="G-sense error rate"/>
+  <attr id="C0" Ctgr="1" Name="Power-off retract count"/>
+  <attr id="C1" Ctgr="1" Name="Load/Unload cycle count"/>
+  <attr id="C2" Ctgr="1" Name="HDD temperature"/>
+  <attr id="C3" Ctgr="2" Name="Hardware ECC recovered"/>
+  <attr id="C4" Ctgr="1" Name="Reallocation count"/>
+  <attr id="C5" Ctgr="1" Name="Current pending sector count"/>
+  <attr id="C6" Ctgr="1" Name="Offline scan uncorrectable count"/>
+  <attr id="C7" Ctgr="1" Name="UDMA CRC error rate"/>
+  <attr id="C8" Ctgr="1" Name="Write error rate"/>
+  <attr id="C9" Ctgr="1" Name="Soft read error rate"/>
+  <attr id="CA" Ctgr="1" Name="Data Address Mark errors"/>
+  <attr id="CB" Ctgr="1" Name="Run out cancel"/>
+  <attr id="CC" Ctgr="1" Name="Soft ECC correction"/>
+  <attr id="CD" Ctgr="1" Name="Thermal asperity rate (TAR)"/>
+  <attr id="CE" Ctgr="2" Name="Flying height"/>
+  <attr id="CF" Ctgr="1" Name="Spin high current"/>
+  <attr id="D0" Ctgr="2" Name="Spin buzz"/>
+  <attr id="D1" Ctgr="2" Name="Offline seek performance"/>
+  <attr id="D3" Ctgr="2" Name="Vibration During Write"/>
+  <attr id="D4" Ctgr="2" Name="Shock During Write"/>
+  <attr id="DC" Ctgr="1" Name="Disk shift"/>
+  <attr id="DD" Ctgr="1" Name="G-sense error rate"/>
+  <attr id="DE" Ctgr="2" Name="Loaded hours"/>
+  <attr id="DF" Ctgr="2" Name="Load/unload retry count"/>
+  <attr id="E0" Ctgr="1" Name="Load friction"/>
+  <attr id="E1" Ctgr="1" Name="Load/Unload cycle count"/>
+  <attr id="E2" Ctgr="2" Name="Load-in time"/>
+  <attr id="E3" Ctgr="1" Name="Torque amplification count"/>
+  <attr id="E4" Ctgr="1" Name="Power-off retract count"/>
+  <attr id="E6" Ctgr="2" Name="GMR head amplitude"/>
+  <attr id="E7" Ctgr="1" Name="Temperature"/>
+  <attr id="E8" Ctgr="2" Name="Endurance Remaining"/>
+  <attr id="E9" Ctgr="2" Name="Media Wearout Indicator"/>
+  <attr id="F0" Ctgr="2" Name="Head flying hours"/>
+  <attr id="F1" Ctgr="2" Name="Total LBAs Written"/>
+  <attr id="F2" Ctgr="2" Name="Total LBAs Read"/>
+  <attr id="F9" Ctgr="2" Name="NAND Writes 1 GiB"/>
+  <attr id="FA" Ctgr="1" Name="Read error retry rate"/>
+  <attr id="FE" Ctgr="1" Name="Free Fall Protection"/>
+</SMARTAttributes>

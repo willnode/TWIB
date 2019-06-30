@@ -1,0 +1,431 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ClassControl
+</name>
+</assembly>
+<members>
+<member name="P:ClassControl.gLabel.MouseOver">
+	<summary>
+ Get or Set if the gLabel will Glow when the mouse is over it
+ </summary>
+</member><member name="P:ClassControl.gLabel.MouseOverColor">
+	<summary>
+ Get or Set what color the gLabel will Glow when the mouse is over it
+ </summary>
+</member><member name="P:ClassControl.gLabel.MouseOverForeColor">
+	<summary>
+ Get or Set what Forecolor the gLabel will be when the mouse is over it
+ </summary>
+</member><member name="P:ClassControl.gLabel.Checked">
+	<summary>
+ Get or Set the Checked status
+ </summary>
+</member><member name="P:ClassControl.gLabel.CheckedType">
+	<summary>
+ Get or Set the Checked behavior
+ </summary>
+</member><member name="P:ClassControl.gLabel.CheckedColor">
+	<summary>
+ Get or Set what color the gLabel will Glow when the mouse is over it
+ </summary>
+</member><member name="P:ClassControl.gLabel.FeatherState">
+	<summary>
+ Get or Set if the text is glowing
+ </summary>
+</member><member name="P:ClassControl.gLabel.Feather">
+	<summary>
+ Get or Set the level of feathering (blurring) of the Outer Glow
+ </summary>
+</member><member name="P:ClassControl.gLabel.Pulse">
+	<summary>
+ Get or Set if the gLabel should be Pulsing or not
+ </summary>
+</member><member name="P:ClassControl.gLabel.PulseSpeed">
+	<summary>
+ Get or Set how fast to pulse the gLabel
+ </summary>
+</member><member name="P:ClassControl.gLabel.ShadowOffset">
+	<summary>
+ Get or Set how far to offset the shadow from the text
+ </summary>
+</member><member name="P:ClassControl.gLabel.ShadowState">
+	<summary>
+ Get or Set if the gLabel displays the shadow text
+ </summary>
+</member><member name="P:ClassControl.gLabel.ShadowColor">
+	<summary>
+ Get or Set what color to use for the shadow text
+ </summary>
+</member><member name="P:ClassControl.gLabel.GlowMatchChecked">
+	<summary>
+ Get or Set if the text is glowing
+ </summary>
+</member><member name="P:ClassControl.gLabel.GlowState">
+	<summary>
+ Get or Set if the text is glowing
+ </summary>
+</member><member name="P:ClassControl.gLabel.Glow">
+	<summary>
+ Get or Set how far out the text glows
+ </summary>
+</member><member name="P:ClassControl.gLabel.GlowColor">
+	<summary>
+ Get or Set what color to use for the Glow
+ </summary>
+</member><member name="P:ClassControl.gLabel.Border">
+	<summary>
+ Get or Set to show or not show the border
+ </summary>
+</member><member name="P:ClassControl.gLabel.BorderColor">
+	<summary>
+ Get or Set what Color to draw the border
+ </summary>
+</member><member name="P:ClassControl.gLabel.BorderWidth">
+	<summary>
+ Get or Set what Width to draw the border
+ </summary>
+</member><member name="P:ClassControl.gLabel.AutoFit">
+	<summary>
+ Get or Set if the text is fitted to the DisplayRectangle or uses Font Size 
+ </summary>
+</member><member name="P:ClassControl.gLabel.TextWordWrap">
+	<summary>
+ Get or Set if the text wraps inside the DisplayRectangle 
+ </summary>
+</member><member name="P:ClassControl.gLabel.AutoEllipsis">
+	<summary>
+  Get or Set if the text adds an Ellipsis (...) when the text exceeds the width
+ </summary>
+</member><member name="P:ClassControl.gLabel.FillType">
+	<summary>
+ The eFillType Fill Type to apply to the gLabel
+ </summary>
+</member><member name="P:ClassControl.gLabel.FillTypeLinear">
+	<summary>
+ The Linear Blend type
+ </summary>
+</member><member name="P:ClassControl.gLabel.ForeColorBlend">
+	<summary>
+ The ColorBlend used to fill the gLabel
+ </summary>
+</member><member name="M:ClassControl.gLabel.EnabledColor(System.Drawing.Color)">
+	<summary>
+ Convert color to gray if Disabled else return origional color
+ </summary>
+	<param name="ColorIn">Color to Check</param>
+</member><member name="M:ClassControl.gLabel.EnableBlends(System.Drawing.Color[])">
+	<summary>
+ Convert colorblend to grayscale if Disabled else return origional colorblend
+ </summary>
+	<param name="ColorIn">Colorblend to Check</param>
+</member><member name="T:ClassControl.gLabel">
+	<summary>
+ Label control with built-in effects like AutoFit, MouseOver, Shadow, Outer Glow, and Pulse Glow
+ </summary>
+	<remarks>
+ v1.0.6
+ 01-26-2011
+ Added Padding Support
+ Added TextWordWrap Property
+ Added AutoEllispis Support
+ v1.0.7
+ 03-03-2011
+ Added MouseOverForeColor Property
+ Added Checked Property
+ Added Checked Color Property
+ Added Checked Toggle State Method
+ v1.0.8
+ 01-03-2012
+ Added BlendItemsConverter
+ Cleaned up Default Values
+ Added CheckedType Property
+ </remarks>
+</member><member name="F:ClassControl.ColorSlider.components">
+	<summary> 
+ Required designer variable.
+ </summary>
+</member><member name="M:ClassControl.ColorSlider.Dispose(System.Boolean)">
+	<summary> 
+ Clean up any resources being used.
+ </summary>
+	<param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member><member name="M:ClassControl.ColorSlider.InitializeComponent">
+	<summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member><member name="E:ClassControl.ColorSlider.ValueChanged">
+	<summary>
+ Fires when Slider position has changed
+ </summary>
+</member><member name="E:ClassControl.ColorSlider.Scroll">
+	<summary>
+ Fires when user scrolls the Slider
+ </summary>
+</member><member name="P:ClassControl.ColorSlider.ThumbRect">
+	<summary>
+ Gets the thumb rect. Usefull to determine bounding rectangle when creating custom thumb shape.
+ </summary>
+	<value>The thumb rect.</value>
+</member><member name="P:ClassControl.ColorSlider.ThumbSize">
+	<summary>
+ Gets or sets the size of the thumb.
+ </summary>
+	<value>The size of the thumb.</value>
+	<exception cref="T:System.ArgumentOutOfRangeException">exception thrown when value is lower than zero or grather than half of appropiate dimension</exception>
+</member><member name="P:ClassControl.ColorSlider.ThumbCustomShape">
+	<summary>
+ Gets or sets the thumb custom shape. Use ThumbRect property to determine bounding rectangle.
+ </summary>
+	<value>The thumb custom shape. null means default shape</value>
+</member><member name="P:ClassControl.ColorSlider.ThumbRoundRectSize">
+	<summary>
+ Gets or sets the size of the thumb round rectangle edges.
+ </summary>
+	<value>The size of the thumb round rectangle edges.</value>
+</member><member name="P:ClassControl.ColorSlider.BorderRoundRectSize">
+	<summary>
+ Gets or sets the size of the border round rect.
+ </summary>
+	<value>The size of the border round rect.</value>
+</member><member name="P:ClassControl.ColorSlider.Orientation">
+	<summary>
+ Gets or sets the orientation of Slider.
+ </summary>
+	<value>The orientation.</value>
+</member><member name="P:ClassControl.ColorSlider.Value">
+	<summary>
+ Gets or sets the value of Slider.
+ </summary>
+	<value>The value.</value>
+	<exception cref="T:System.ArgumentOutOfRangeException">exception thrown when value is outside appropriate range (min, max)</exception>
+</member><member name="P:ClassControl.ColorSlider.Minimum">
+	<summary>
+ Gets or sets the minimum value.
+ </summary>
+	<value>The minimum value.</value>
+	<exception cref="T:System.ArgumentOutOfRangeException">exception thrown when minimal value is greather than maximal one</exception>
+</member><member name="P:ClassControl.ColorSlider.Maximum">
+	<summary>
+ Gets or sets the maximum value.
+ </summary>
+	<value>The maximum value.</value>
+	<exception cref="T:System.ArgumentOutOfRangeException">exception thrown when maximal value is lower than minimal one</exception>
+</member><member name="P:ClassControl.ColorSlider.SmallChange">
+	<summary>
+ Gets or sets trackbar's small change. It affects how to behave when directional keys are pressed
+ </summary>
+	<value>The small change value.</value>
+</member><member name="P:ClassControl.ColorSlider.LargeChange">
+	<summary>
+ Gets or sets trackbar's large change. It affects how to behave when PageUp/PageDown keys are pressed
+ </summary>
+	<value>The large change value.</value>
+</member><member name="P:ClassControl.ColorSlider.DrawFocusRectangle">
+	<summary>
+ Gets or sets a value indicating whether to draw focus rectangle.
+ </summary>
+	<value><c>true</c> if focus rectangle should be drawn; otherwise, <c>false</c>.</value>
+</member><member name="P:ClassControl.ColorSlider.DrawSemitransparentThumb">
+	<summary>
+ Gets or sets a value indicating whether to draw semitransparent thumb.
+ </summary>
+	<value><c>true</c> if semitransparent thumb should be drawn; otherwise, <c>false</c>.</value>
+</member><member name="P:ClassControl.ColorSlider.MouseEffects">
+	<summary>
+ Gets or sets whether mouse entry and exit actions have impact on how control look.
+ </summary>
+	<value><c>true</c> if mouse entry and exit actions have impact on how control look; otherwise, <c>false</c>.</value>
+</member><member name="P:ClassControl.ColorSlider.MouseWheelBarPartitions">
+	<summary>
+ Gets or sets the mouse wheel bar partitions.
+ </summary>
+	<value>The mouse wheel bar partitions.</value>
+	<exception cref="T:System.ArgumentOutOfRangeException">exception thrown when value isn't greather than zero</exception>
+</member><member name="P:ClassControl.ColorSlider.ThumbOuterColor">
+	<summary>
+ Gets or sets the thumb outer color .
+ </summary>
+	<value>The thumb outer color.</value>
+</member><member name="P:ClassControl.ColorSlider.ThumbInnerColor">
+	<summary>
+ Gets or sets the inner color of the thumb.
+ </summary>
+	<value>The inner color of the thumb.</value>
+</member><member name="P:ClassControl.ColorSlider.ThumbPenColor">
+	<summary>
+ Gets or sets the color of the thumb pen.
+ </summary>
+	<value>The color of the thumb pen.</value>
+</member><member name="P:ClassControl.ColorSlider.BarOuterColor">
+	<summary>
+ Gets or sets the outer color of the bar.
+ </summary>
+	<value>The outer color of the bar.</value>
+</member><member name="P:ClassControl.ColorSlider.BarInnerColor">
+	<summary>
+ Gets or sets the inner color of the bar.
+ </summary>
+	<value>The inner color of the bar.</value>
+</member><member name="P:ClassControl.ColorSlider.BarPenColor">
+	<summary>
+ Gets or sets the color of the bar pen.
+ </summary>
+	<value>The color of the bar pen.</value>
+</member><member name="P:ClassControl.ColorSlider.ElapsedOuterColor">
+	<summary>
+ Gets or sets the outer color of the elapsed.
+ </summary>
+	<value>The outer color of the elapsed.</value>
+</member><member name="P:ClassControl.ColorSlider.ElapsedInnerColor">
+	<summary>
+ Gets or sets the inner color of the elapsed.
+ </summary>
+	<value>The inner color of the elapsed.</value>
+</member><member name="P:ClassControl.ColorSlider.ColorSchema">
+	<summary>
+ Sets color schema. Color generalization / fast color changing. Has no effect when slider colors are changed manually after schema was applied. 
+ </summary>
+	<value>New color schema value</value>
+</member><member name="M:ClassControl.ColorSlider.#ctor(System.Int32,System.Int32,System.Int32)">
+	<summary>
+ Initializes a new instance of the <see cref="T:ClassControl.ColorSlider"/> class.
+ </summary>
+	<param name="min">The minimum value.</param>
+	<param name="max">The maximum value.</param>
+	<param name="value__1">The current value.</param>
+</member><member name="M:ClassControl.ColorSlider.#ctor">
+	<summary>
+ Initializes a new instance of the <see cref="T:ClassControl.ColorSlider"/> class.
+ </summary>
+</member><member name="M:ClassControl.ColorSlider.OnPaint(System.Windows.Forms.PaintEventArgs)">
+	<summary>
+ Raises the <see cref="E:System.Windows.Forms.Control.Paint"></see> event.
+ </summary>
+	<param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs"></see> that contains the event data.</param>
+</member><member name="M:ClassControl.ColorSlider.DrawColorSlider(System.Windows.Forms.PaintEventArgs,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color)">
+	<summary>
+ Draws the colorslider control using passed colors.
+ </summary>
+	<param name="e">The <see cref="T:System.Windows.Forms.PaintEventArgs"/> instance containing the event data.</param>
+	<param name="thumbOuterColorPaint">The thumb outer color paint.</param>
+	<param name="thumbInnerColorPaint">The thumb inner color paint.</param>
+	<param name="thumbPenColorPaint">The thumb pen color paint.</param>
+	<param name="barOuterColorPaint">The bar outer color paint.</param>
+	<param name="barInnerColorPaint">The bar inner color paint.</param>
+	<param name="barPenColorPaint">The bar pen color paint.</param>
+	<param name="elapsedOuterColorPaint">The elapsed outer color paint.</param>
+	<param name="elapsedInnerColorPaint">The elapsed inner color paint.</param>
+</member><member name="M:ClassControl.ColorSlider.OnEnabledChanged(System.EventArgs)">
+	<summary>
+ Raises the <see cref="E:System.Windows.Forms.Control.EnabledChanged"></see> event.
+ </summary>
+	<param name="e">An <see cref="T:System.EventArgs"></see> that contains the event data.</param>
+</member><member name="M:ClassControl.ColorSlider.OnMouseEnter(System.EventArgs)">
+	<summary>
+ Raises the <see cref="E:System.Windows.Forms.Control.MouseEnter"></see> event.
+ </summary>
+	<param name="e">An <see cref="T:System.EventArgs"></see> that contains the event data.</param>
+</member><member name="M:ClassControl.ColorSlider.OnMouseLeave(System.EventArgs)">
+	<summary>
+ Raises the <see cref="E:System.Windows.Forms.Control.MouseLeave"></see> event.
+ </summary>
+	<param name="e">An <see cref="T:System.EventArgs"></see> that contains the event data.</param>
+</member><member name="M:ClassControl.ColorSlider.OnMouseDown(System.Windows.Forms.MouseEventArgs)">
+	<summary>
+ Raises the <see cref="E:System.Windows.Forms.Control.MouseDown"></see> event.
+ </summary>
+	<param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs"></see> that contains the event data.</param>
+</member><member name="M:ClassControl.ColorSlider.OnMouseMove(System.Windows.Forms.MouseEventArgs)">
+	<summary>
+ Raises the <see cref="E:System.Windows.Forms.Control.MouseMove"></see> event.
+ </summary>
+	<param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs"></see> that contains the event data.</param>
+</member><member name="M:ClassControl.ColorSlider.OnMouseUp(System.Windows.Forms.MouseEventArgs)">
+	<summary>
+ Raises the <see cref="E:System.Windows.Forms.Control.MouseUp"></see> event.
+ </summary>
+	<param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs"></see> that contains the event data.</param>
+</member><member name="M:ClassControl.ColorSlider.OnMouseWheel(System.Windows.Forms.MouseEventArgs)">
+	<summary>
+ Raises the <see cref="E:System.Windows.Forms.Control.MouseWheel"></see> event.
+ </summary>
+	<param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs"></see> that contains the event data.</param>
+</member><member name="M:ClassControl.ColorSlider.OnGotFocus(System.EventArgs)">
+	<summary>
+ Raises the <see cref="E:System.Windows.Forms.Control.GotFocus"></see> event.
+ </summary>
+	<param name="e">An <see cref="T:System.EventArgs"></see> that contains the event data.</param>
+</member><member name="M:ClassControl.ColorSlider.OnLostFocus(System.EventArgs)">
+	<summary>
+ Raises the <see cref="E:System.Windows.Forms.Control.LostFocus"></see> event.
+ </summary>
+	<param name="e">An <see cref="T:System.EventArgs"></see> that contains the event data.</param>
+</member><member name="M:ClassControl.ColorSlider.OnKeyUp(System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ Raises the <see cref="E:System.Windows.Forms.Control.KeyUp"></see> event.
+ </summary>
+	<param name="e">A <see cref="T:System.Windows.Forms.KeyEventArgs"></see> that contains the event data.</param>
+</member><member name="M:ClassControl.ColorSlider.ProcessDialogKey(System.Windows.Forms.Keys)">
+	<summary>
+ Processes a dialog key.
+ </summary>
+	<param name="keyData">One of the <see cref="T:System.Windows.Forms.Keys"></see> values that represents the key to process.</param>
+	<returns>
+ true if the key was processed by the control; otherwise, false.
+ </returns>
+</member><member name="M:ClassControl.ColorSlider.CreateRoundRectPath(System.Drawing.Rectangle,System.Drawing.Size)">
+	<summary>
+ Creates the round rect path.
+ </summary>
+	<param name="rect">The rectangle on which graphics path will be spanned.</param>
+	<param name="size">The size of rounded rectangle edges.</param>
+	<returns></returns>
+</member><member name="M:ClassControl.ColorSlider.DesaturateColors(System.Drawing.Color[])">
+	<summary>
+ Desaturates colors from given array.
+ </summary>
+	<param name="colorsToDesaturate">The colors to be desaturated.</param>
+	<returns></returns>
+</member><member name="M:ClassControl.ColorSlider.LightenColors(System.Drawing.Color[])">
+	<summary>
+ Lightens colors from given array.
+ </summary>
+	<param name="colorsToLighten">The colors to lighten.</param>
+	<returns></returns>
+</member><member name="M:ClassControl.ColorSlider.SetProperValue(System.Int32)">
+	<summary>
+ Sets the trackbar value so that it wont exceed allowed range.
+ </summary>
+	<param name="val">The value.</param>
+</member><member name="M:ClassControl.ColorSlider.IsPointInRect(System.Drawing.Point,System.Drawing.Rectangle)">
+	<summary>
+ Determines whether rectangle contains given point.
+ </summary>
+	<param name="pt">The point to test.</param>
+	<param name="rect">The base rectangle.</param>
+	<returns>
+		<c>true</c> if rectangle contains given point; otherwise, <c>false</c>.
+ </returns>
+</member><member name="T:ClassControl.ColorSlider">
+	<summary>
+ Encapsulates control that visualy displays certain integer value and allows user to change it within desired range. It imitates <see cref="T:System.Windows.Forms.TrackBar"/> as far as mouse usage is concerned.
+ </summary>
+</member><member name="P:ClassControl.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:ClassControl.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:ClassControl.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SystemInformations>
+  <Processor>
+    <attr id="Name" str="Name"/>
+    <attr id="Decription" str="Decription"/>
+    <attr id="AddressWidth" str="System Data Width"/>
+    <attr id="DataWidth" str="Processor Data Width"/>
+    <attr id="Architecture" str="Architecture">
+      <enum val="0" name="x86"/>
+      <enum val="1" name="MIPS"/>
+      <enum val="2" name="Alpha"/>
+      <enum val="3" name="PowerPC"/>
+      <enum val="5" name="ARM"/>
+      <enum val="6" name="Itanium"/>
+      <enum val="9" name="x64"/>
+    </attr> 
+    <attr id="NumberOfCores" str="Core Count"/>
+    <attr id="NumberOfLogicalProcessor" str="Logical Processor Count"/>
+    
+    <attr id="DeviceID" str="Device ID"/>
+    <attr id="ProcessorID" str="Processor ID"/>
+    <attr id="ProcessorType" str="Processor Type">
+      <enum val="1" name="Other"/>
+      <enum val="2" name="Unknown"/>
+      <enum val="3" name="Central Processor"/>
+      <enum val="4" name="Math Processor"/>
+      <enum val="5" name="DSP Processor"/>
+      <enum val="6" name="Video Processor"/>
+    </attr >
+   <attr id="Revision" str="Revision"/>
+   <attr id="Role" str="Role"/>
+   <attr id="Status" str="Status"/>
+    
+    
+  
+  </Processor>
+</SystemInformations>

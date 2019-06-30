@@ -1,0 +1,508 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{42C3F311-E688-40B8-A90B-4E6B8CD1FF45}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ClassInfo.My.MyApplication</StartupObject>
+    <RootNamespace>ClassInfo</RootNamespace>
+    <AssemblyName>TWIB Tool</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\Users\Wildan Mubarok\Documents\ClassInfo\Publish\0.7\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>0.7.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TWIB Tool.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>TWIB Tool.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>Custom</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>TWIB Tool.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>TWIB Tool.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon - Copy.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>95AED9057C44592CE701DCD3C7B0D140472C8CC5</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ClassInfo_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Camera_NET">
+      <HintPath>..\..\Other Projects\Camera_Net_Library_and_Samples._Sources.__v1.1.2_\Camera_Net\bin\Debug\Camera_NET.dll</HintPath>
+    </Reference>
+    <Reference Include="CoreAudioApi">
+      <HintPath>..\..\CoreAudioApi.dll</HintPath>
+    </Reference>
+    <Reference Include="DirectShowLib-2010">
+      <HintPath>..\..\Other Projects\Camera_Net_Library_and_Samples._Sources.__v1.1.2_\DirectShowLib\bin\Debug\DirectShowLib-2010.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="SystemFunctionLib, Version=0.1.141.4, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Other Projects\SystemFunction_0.1.141.4_Preview\SystemFunctionLib.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsHookLib">
+      <HintPath>..\..\WindowsHookLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="ClassInfo" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Management" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="ClrDialog.Designer.vb">
+      <DependentUpon>ClrDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClrDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ErrorForm.Designer.vb">
+      <DependentUpon>ErrorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="References\ApplicationEvents.vb" />
+    <Compile Include="References\CPUCounter.vb" />
+    <Compile Include="DockForm.Designer.vb">
+      <DependentUpon>DockForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DockForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="References\C_Disk.vb" />
+    <Compile Include="References\C_Display.vb" />
+    <Compile Include="References\Info.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="References\MouseInvert.vb" />
+    <Compile Include="References\SoundWaveIn.vb" />
+    <Compile Include="References\C_WiFi.vb" />
+    <Compile Include="UserForms\Splash.Designer.vb">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\Splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\SysInfo.Designer.vb">
+      <DependentUpon>SysInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\SysInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\U_Audio.Designer.vb">
+      <DependentUpon>U_Audio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\U_Audio.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\U_Batt.Designer.vb">
+      <DependentUpon>U_Batt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\U_Batt.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\U_CPU.Designer.vb">
+      <DependentUpon>U_CPU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\U_CPU.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\U_Disk.Designer.vb">
+      <DependentUpon>U_Disk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\U_Disk.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\U_Display.Designer.vb">
+      <DependentUpon>U_Display.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\U_Display.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\U_Info.Designer.vb">
+      <DependentUpon>U_Info.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\U_Info.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\U_Memo.Designer.vb">
+      <DependentUpon>U_Memo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\U_Memo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\U_Temp.Designer.vb">
+      <DependentUpon>U_Temp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\U_Temp.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\U_WiFi.Designer.vb">
+      <DependentUpon>U_WiFi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\U_WiFi.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ClrDialog.resx">
+      <DependentUpon>ClrDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DockForm.resx">
+      <DependentUpon>DockForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorForm.resx">
+      <DependentUpon>ErrorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\Splash.resx">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\SysInfo.resx">
+      <DependentUpon>SysInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\U_Audio.resx">
+      <DependentUpon>U_Audio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\U_Batt.resx">
+      <DependentUpon>U_Batt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\U_CPU.resx">
+      <DependentUpon>U_CPU.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\U_Disk.resx">
+      <DependentUpon>U_Disk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\U_Display.resx">
+      <DependentUpon>U_Display.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\U_Info.resx">
+      <DependentUpon>U_Info.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\U_Memo.resx">
+      <DependentUpon>U_Memo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\U_Temp.resx">
+      <DependentUpon>U_Temp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\U_WiFi.resx">
+      <DependentUpon>U_WiFi.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Audio_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Audio_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Audio_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Batt_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Batt_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Batt_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Batt_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Core_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Core_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Core_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Core_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Disk_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Disk_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Disk_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Disk_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Key_Caps_Off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Key_Caps_On.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Key_Num_Off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Key_Num_On.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Key_Scroll_Off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Key_Scroll_On.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Light_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Light_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Light_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Light_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Memo_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Memo_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Memo_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Memo_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Temp_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Temp_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Temp_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Temp_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WiFi_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WiFi_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WiFi_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WiFi_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassControl\ClassControl.vbproj">
+      <Project>{399fb6e8-df7b-4030-b61a-d73cd27e58e8}</Project>
+      <Name>ClassControl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pin_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pin_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Light_Calibration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Audio_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info_About.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon - Copy.ico" />
+    <Content Include="Resources\HDDSMART.xml" />
+    <Content Include="UserForms\XMLFile1.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Resources\Info_Refresh.png" />
+    <None Include="Resources\Info_Close.png" />
+    <None Include="Resources\Info_Set.png" />
+    <None Include="Resources\Too.png" />
+    <None Include="Resources\Disk_Eject_On.png" />
+    <None Include="Resources\Disk_Eject_Off.png" />
+    <None Include="Resources\Icon.png" />
+    <None Include="Resources\btn_donateCC_LG.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Icon - Copy.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
